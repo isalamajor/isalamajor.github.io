@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Terminal, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 
 function App() {
   return (
