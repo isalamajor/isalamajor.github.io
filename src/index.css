@@ -2,6 +2,7 @@
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', Verdana, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -34,8 +35,9 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.8em;
   line-height: 1.1;
+  font-family: 'Consolas';
 }
 
 button {
@@ -58,6 +60,16 @@ p {
   text-align: justify;
 }
 
+.bg-radial {
+  background: radial-gradient(circle, #2b2680, #4f46e5, #6a58a0, #a78bfa, #60a5fa);
+  background-size: 400% 400%;
+}
+
+span {
+  font-weight: 600;
+  color: rgb(242, 242, 134)
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -67,15 +79,23 @@ p {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    border-color:#213547;
+  }
+  button:hover {
+    border-color: #2f3499;
+    color: #2f3499;
+  }
+  .bg-radial {
+    background: radial-gradient(circle, #e0dff8, #bab7e7, #faf9ff, #a78bfa, #dfeeff);
+    background-size: 400% 400%;
+  }
+  
+  span {
+    font-weight: 600;
+    color: #2f3499;
   }
 }
 
-
-.bg-radial {
-  background: radial-gradient(circle, #2b2680, #4f46e5, #6a58a0, #a78bfa, #60a5fa);
-  background-size: 400% 400%;
-}
 
 @keyframes radial-move {
   0% { background-position: 50% 50%; }
@@ -85,10 +105,4 @@ p {
 
 .animate-radial {
   animation: radial-move 15s ease infinite;
-}
-
-
-span {
-  font-weight: 600;
-  color: rgb(242, 242, 134)
 }
