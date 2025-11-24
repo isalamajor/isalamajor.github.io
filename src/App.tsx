@@ -4,14 +4,15 @@ function App() {
   return (
     <div className="relative w-full h-full bg-radial animate-radial">      
       
-      <div className="relative z-10 flex flex-col gap-5 justify-center h-full pt-40 px-10 sm:px-20 md:px-25 lg:px-50 xl:px-100">      {/*Intro */}
+      <div className="relative z-10 flex flex-col gap-5 justify-center w-full h-full pt-40 px-10 sm:px-20 md:px-25 lg:px-50 xl:px-100">      
         
+        {/* Intro */}
         <div className="flex flex-row gap-5 mb-10">
           <img className="shadow-2xl rounded-full w-45 h-45" src={"/cv_foto_isa_2.png"}></img>
           <div className='flex flex-col'>
-            <p className="cursor-pointer text-6xl w-100 hover:text-purple-500 transition-colors duration-300">Isabel</p>
-            <p className="cursor-pointer text-6xl w-100 hover:text-purple-400 transition-colors duration-300">Hernández</p>
-            <p className="cursor-pointer text-6xl w-100 hover:text-purple-300 transition-colors duration-300">Barrio</p>
+            <p className="cursor-pointer text-5xl md:text-6xl hover:text-purple-500 transition-colors duration-300">Isabel</p>
+            <p className="cursor-pointer text-5xl md:text-6xl hover:text-purple-400 transition-colors duration-300">Hernández</p>
+            <p className="cursor-pointer text-5xl md:text-6xl hover:text-purple-300 transition-colors duration-300">Barrio</p>
           </div>
         </div>
         <p>
@@ -136,7 +137,7 @@ function App() {
         
         </div>
 
-      <div className='pt-30'>
+      <div className='pt-30 pb-5 sm:pb-0'>
         <Contact/>
       </div>
       </div>
