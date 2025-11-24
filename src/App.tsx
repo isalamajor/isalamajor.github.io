@@ -174,7 +174,7 @@ const Contact = () => {
       </button>
       
       <button className="rounded-full p-1 bg-opacity-0 border border-1 border-white w-fit flex flex-row gap-1 items-center"
-      onClick={() => window.open("www.linkedin.com/in/isabel-hernández-barrio-408a38326", "_blank")}>
+      onClick={() => window.open("https://www.linkedin.com/in/isabel-hernández-barrio-408a38326", "_blank")}>
         <Linkedin/>
         LinkedIn
       </button>
