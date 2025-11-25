@@ -38,6 +38,7 @@ h1 {
   font-size: 2.8em;
   line-height: 1.1;
   font-family: Consolas, monospace;
+  font-size: clamp(2.5rem, 5vw, 3rem);
 }
 
 button {

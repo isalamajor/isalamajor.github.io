@@ -56,7 +56,7 @@ function App() {
           
           {/* Studies */}
           <div className='flex flex-col gap-5'>
-            <h1 className='text-center lg:text-left'>{texts[language].education_title}</h1>
+            <h1 className='text-sm text-center lg:text-left'>{texts[language].education_title}</h1>
             <div className="flex flex-row gap-5 justify-start items-center">
                 <img className="rounded-full w-20 h-20 cursor-pointer" src={"/uc3m.png"}
                 onClick={() => window.open('https://www.uc3m.es/bachelor-degree/computer-science', '_blank')}/>
