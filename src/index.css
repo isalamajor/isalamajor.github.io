@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial,  system-ui, sans-serif;
   font-family: 'PT Sans', Verdana, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -37,7 +37,7 @@ body {
 h1 {
   font-size: 2.8em;
   line-height: 1.1;
-  font-family: 'Consolas';
+  font-family: Consolas, monospace;
 }
 
 button {
@@ -70,8 +70,23 @@ span {
   color: rgb(242, 242, 134)
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
+.tech-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+  width: fit-content;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  background-color: rgba(35, 39, 47, 0.7);
+}
+
+.selectLang {
+  background-color: #0a1a44;
+}
+
+.light {
+  body {
     color: #213547;
     background-color: #ffffff;
   }
@@ -89,10 +104,15 @@ span {
     background: radial-gradient(circle, #e0dff8, #bab7e7, #faf9ff, #a78bfa, #dfeeff);
     background-size: 400% 400%;
   }
-  
   span {
     font-weight: 600;
     color: #2f3499;
+  }
+  .tech-tag {
+    background-color: rgba(35, 39, 47, 0.2);
+  }
+  .selectLang {
+    background-color: #8481ac;
   }
 }
 
