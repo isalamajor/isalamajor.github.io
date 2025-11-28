@@ -93,7 +93,7 @@ function App() {
           <div className='flex flex-col gap-10'>
             <div className='flex flex-col lg:flex-row gap-5'>
               <img className='shadow-2xl w-full lg:w-100 h-full h-max-100 lg:h-70 rounded-lg bg-gray-900 rounded-lg cursor-pointer object-cover' src='/spotify-sharer.png'
-                />
+                 onClick={() => window.open("https://spotify-sharer-dep.onrender.com/", "_blank")}/>
                 <div>
                   <p className='text-lg font-semibold'>{texts[language].spotify_title}</p>
                   <p>{texts[language].spotify_text}</p>
