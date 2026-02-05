@@ -8,7 +8,7 @@ import * as motion from "motion/react-client";
 type Language = "es" | "en" | "fr";
 
 const projectsVariants = {
-  hidden: { opacity: 0, x: -200 },
+  hidden: { opacity: 0, x: -50 },
   visible: {
     opacity: 1,
     x: 0,
@@ -16,7 +16,7 @@ const projectsVariants = {
   },
 };
 const experienceVariants = {
-  hidden: { opacity: 0, x: 200 },
+  hidden: { opacity: 0, x: 50 },
   visible: {
     opacity: 1,
     x: 0,

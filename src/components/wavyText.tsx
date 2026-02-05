@@ -20,7 +20,7 @@ export function WaveTitle({ text }: WaveTitleProps) {
 
   return (
     <motion.h1
-      className="wave-title cursor-pointer text-4xl lg:text-6xl font-thin"
+      className="wave-title cursor-pointer text-3xl lg:text-6xl font-thin"
       animate={controls}
       onClick={handleClick}
     >
