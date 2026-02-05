@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  font-family: Avenir, Helvetica, Arial,  system-ui, sans-serif;
-  font-family: 'PT Sans', Verdana, sans-serif;
+  font-family: Avenir, Helvetica, Arial, system-ui, sans-serif;
+  font-family: "PT Sans", Verdana, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -14,6 +14,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --my-yellow: #f2f286;
+  --my-purple: #2f3499;
+  --accent-color: #ff33a1;
+  --background-color: #242424;
+  --text-color: rgba(255, 255, 255, 0.87);
 }
 
 a {
@@ -46,10 +51,12 @@ button {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
+  color: #f4cfff;
+  border-color: #f4cfff;
 }
 button:hover {
-  border-color: rgb(203, 203, 89);
-  color: rgb(203, 203, 89);
+  border-color: #f2f286;
+  color: #f2f286;
 }
 button:focus,
 button:focus-visible {
@@ -61,13 +68,24 @@ p {
 }
 
 .bg-radial {
-  background: radial-gradient(circle, #2b2680, #4f46e5, #6a58a0, #a78bfa, #60a5fa);
+  background: radial-gradient(
+    circle,
+    #2b2680,
+    #4f46e5,
+    #6a58a0,
+    #a78bfa,
+    #60a5fa
+  );
   background-size: 400% 400%;
 }
 
 span {
   font-weight: 600;
-  color: rgb(242, 242, 134)
+  color: #f2f286;
+}
+
+h1 {
+  color: #f2f286;
 }
 
 .tech-tag {
@@ -83,6 +101,13 @@ span {
 
 .selectLang {
   background-color: #0a1a44;
+  color: #f2f286;
+}
+.selectLangColor {
+  color: #f2f286;
+}
+.selectLangColor:hover {
+  color: #2f3499;
 }
 
 .light {
@@ -94,14 +119,22 @@ span {
     color: #747bff;
   }
   button {
-    border-color:#213547;
+    color: #213547;
+    border-color: #213547;
   }
   button:hover {
     border-color: #2f3499;
     color: #2f3499;
   }
   .bg-radial {
-    background: radial-gradient(circle, #e0dff8, #bab7e7, #faf9ff, #a78bfa, #dfeeff);
+    background: radial-gradient(
+      circle,
+      #e0dff8,
+      #bab7e7,
+      #faf9ff,
+      #a78bfa,
+      #dfeeff
+    );
     background-size: 400% 400%;
   }
   span {
@@ -113,16 +146,41 @@ span {
   }
   .selectLang {
     background-color: #8481ac;
+    color: #2f3499;
+  }
+  .selectLangColor {
+    color: #2f3499;
+  }
+  .selectLangColor:hover {
+    color: #2f3499;
+  }
+  h1 {
+    color: #2f3499;
   }
 }
 
-
 @keyframes radial-move {
-  0% { background-position: 50% 50%; }
-  50% { background-position: 60% 60%; }
-  100% { background-position: 50% 50%; }
+  0% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 60% 60%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
 }
 
 .animate-radial {
   animation: radial-move 15s ease infinite;
+}
+
+.wave-title {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.wave-letter {
+  display: inline-block;
+  will-change: transform;
 }
