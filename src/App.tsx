@@ -40,7 +40,7 @@ function App() {
         {/* Intro */}
         <div className="flex flex-row gap-5 mb-10 items-center justify-center sm:justify-start">
           <img
-            className="shadow-2xl rounded-full w-30 h-30 lg:w-45 lg:h-45"
+            className="shadow-2xl rounded-full w-25 h-25 lg:w-45 lg:h-45"
             src={"/cv_foto_isa_2.png"}
           ></img>
           <WaveTitle text={`Isabel\nHernández\nBarrio`} />
